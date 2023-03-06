@@ -1,7 +1,6 @@
 {
   "name": "sanjoynode1",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinaMaxine/MyNodeJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TinaMaxine/MyNodeJS/issues"
+  },
+  "homepage": "https://github.com/TinaMaxine/MyNodeJS#readme",
+  "description": ""
 }
