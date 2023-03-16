@@ -134,7 +134,7 @@ app.post("/addproduct", (req, res) => {
 });
 
 // app.post("/removeproduct",(req,res)=>{
-//     // const product_id=req.body;
+//     // const product_id=req.body;  
 //     products.pull();
 //     res.send(products);
 // })

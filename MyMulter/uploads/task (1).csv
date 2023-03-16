@@ -1,0 +1,171 @@
+"number","short_description","state","assignment_group","sys_created_on","sys_updated_on","closed_at","comments","priority","assigned_to","ref_incident.close_code","ref_incident.caller_id","ref_service_task.u_requested_for"
+"TASK000007769202","PROD Detok Job Failed in PROD environment for one of the Pipeline for Table ""dim_bpme_aasfcard""","Cancelled","OPS - Data Protection - ITSVC0010606","2023-02-20 05:41:03","2023-02-20 09:37:28","2023-02-20 09:37:28","2023-02-20 09:37:28 - Kranti Karale (Additional comments)
+Canceling this service request ticket due to convertion to Incident ticket INC000002947007
+
+2023-02-20 09:08:42 - Gnana Mani Patnala (Additional comments)
+Detok Job for dataset dmnz_dim_bpme_aasfcard is last received on 19/02/2023 and it is success at DPE end. We don't find any detok job received on 20/02/2023.
+Hence checking with datahub team if there is any issue at their end.
+
+2023-02-20 08:12:30 - Nobin Kuriakose (Additional comments)
+Hi DPE Team,
+
+DBX role creation is failing with error ""An error occurred (LimitExceeded) when calling the CreateRole operation: Cannot exceed quota for RolesPerAccount: 1000"" 
+
+it's causing detok job failure. 
+
+please check it further
+
+[INFO]	2023-02-20T07:43:45.683Z	e4a475ad-e87b-47b4-a548-a2d02c91e7ef	API client created for: API: ns3k2iahif VPCE: None
+[INFO]	2023-02-20T07:43:45.684Z	e4a475ad-e87b-47b4-a548-a2d02c91e7ef	Posting to https://ns3k2iahif.execute-api.eu-west-1.amazonaws.com/detok/createRole
+[INFO]	2023-02-20T07:43:45.956Z	e4a475ad-e87b-47b4-a548-a2d02c91e7ef	DBX Role 
+{
+    ""error"": ""An error occurred (LimitExceeded) when calling the CreateRole operation: Cannot exceed quota for RolesPerAccount: 1000""
+}
+
+---------------------------
+
+For your reference, we get below output on successful execution 
+
+DBX Role{ ""dbx_iam_role"": ""arn:aws:iam::763139323698:role/Detok-91a09f0db293c7e70e5b8cfb88c553ad"", ""dbx_instance_profile"": ""arn:aws:iam::763139323698:instance-profile/Detok-91a09f0db293c7e70e5b8cfb88c553ad"" }
+
+","3 - Moderate","Patnala, Gnana Mani (ELASTACLOUD)","","","MA, Rajat (ACCENTURE)"
+"TASK000007769135","Detok request Failed - 20/02","Cancelled","OPS - Data Protection - ITSVC0010606","2023-02-20 05:11:24","2023-02-20 09:38:30","2023-02-20 09:38:30","2023-02-20 09:38:30 - Kranti Karale (Additional comments)
+Canceling this service request ticket due to convertion to Incident ticket INC000002947014
+
+2023-02-20 08:13:55 - Nobin Kuriakose (Additional comments)
+Hi DPE Team,
+
+DBX role creation is failing with error ""An error occurred (LimitExceeded) when calling the CreateRole operation: Cannot exceed quota for RolesPerAccount: 1000"" 
+
+it's causing detok job failure. 
+
+please check it further
+
+[INFO]	2023-02-20T07:43:45.683Z	e4a475ad-e87b-47b4-a548-a2d02c91e7ef	API client created for: API: ns3k2iahif VPCE: None
+[INFO]	2023-02-20T07:43:45.684Z	e4a475ad-e87b-47b4-a548-a2d02c91e7ef	Posting to https://ns3k2iahif.execute-api.eu-west-1.amazonaws.com/detok/createRole
+[INFO]	2023-02-20T07:43:45.956Z	e4a475ad-e87b-47b4-a548-a2d02c91e7ef	DBX Role 
+{
+    ""error"": ""An error occurred (LimitExceeded) when calling the CreateRole operation: Cannot exceed quota for RolesPerAccount: 1000""
+}
+
+---------------------------
+
+For your reference, we get below output on successful execution 
+
+DBX Role{ ""dbx_iam_role"": ""arn:aws:iam::763139323698:role/Detok-91a09f0db293c7e70e5b8cfb88c553ad"", ""dbx_instance_profile"": ""arn:aws:iam::763139323698:instance-profile/Detok-91a09f0db293c7e70e5b8cfb88c553ad"" }
+
+","4 - Low","Karale, Kranti (ELASTACLOUD)","","","Rajendran, Kiruthika (INFOSYS)"
+"TASK000007753032","DGCM: DPE: Proactive Failed Job Notification","Closed","OPS - Data Protection - ITSVC0010606","2023-02-15 12:36:21","2023-02-21 02:58:41","2023-02-15 12:40:43","2023-02-21 02:58:42 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","4 - Low","Kalidas, Vijay (ELASTACLOUD)","","","Hall, Stevie (ACCENTURE)"
+"CHG000000248684","<PROD><DPE> Production Release - Q 1 Sprint - 4 - RFC - 9 -  DPE standard changes - 23.02.02- databricks-aws ","Closed","OPS - Data Protection - ITSVC0010606","2023-02-23 09:22:55","2023-02-23 17:42:26","2023-02-23 17:42:27","","","Kalidas, Vijay (ELASTACLOUD)","","",""
+"PTASK000000055865","AWS Security Development applied a new policy to the IAM-ADM role. ","Closed Complete","OPS - Data Protection - ITSVC0010606","2023-02-20 14:28:34","2023-02-24 13:58:02","2023-02-24 13:58:03","","","Prabhu, Megha (ELASTACLOUD)","","",""
+"INC000002947023"," Detok jobs are not able to process (IAM policies limit has been exceeded)","Closed","OPS - Data Protection - ITSVC0010606","2023-02-20 09:49:54","2023-02-25 19:00:08","2023-02-25 19:00:08","","3 - Moderate","Prabhu, Megha (ELASTACLOUD)","","Ian McRobbie",""
+"TASK000007746497","candp-prod-detokservice-ium-ly-ytd is running daily but it is not pickingup the data","Closed","OPS - Data Protection - ITSVC0010606","2023-02-14 10:30:25","2023-02-26 02:09:29","2023-02-20 08:23:19","2023-02-26 02:09:30 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","3 - Moderate","Prabhu, Megha (ELASTACLOUD)","","","Yedidhi, Srinivas (ACCENTURE)"
+"INC000002947007","PROD Detok Job Failed in PROD environment for one of the Pipeline for Table ""dim_bpme_aasfcard""","Closed","OPS - Data Protection - ITSVC0010606","2023-02-20 09:37:25","2023-02-26 04:00:08","2023-02-26 04:00:08","2023-02-20 10:00:24 - Kranti Karale (Additional comments)
+we are working to resolve this issue. We will update you once it is fixed. refer- INC000002947023
+
+","3 - Moderate","Patnala, Gnana Mani (ELASTACLOUD)","","MA, Rajat (ACCENTURE)",""
+"INC000002947014","Detok request Failed - 20/02","Closed","OPS - Data Protection - ITSVC0010606","2023-02-20 09:38:27","2023-02-27 02:00:04","2023-02-27 02:00:05","2023-02-20 10:00:05 - Kranti Karale (Additional comments)
+we are working to resolve this issue. We will update you once it is fixed. refer- INC000002947023
+
+","4 - Low","Karale, Kranti (ELASTACLOUD)","","Rajendran, Kiruthika (INFOSYS)",""
+"TASK000007770621","DGCM: DPE: Proactive Failed Job Notification","Closed","OPS - Data Protection - ITSVC0010606","2023-02-20 10:08:44","2023-02-27 02:29:43","2023-02-21 01:55:35","2023-02-27 02:29:44 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","4 - Low","Karale, Kranti (ELASTACLOUD)","","","Ian McRobbie"
+"TASK000007774316","DGCM: DPE: Proactive Failed Job Notification","Closed","OPS - Data Protection - ITSVC0010606","2023-02-21 01:57:54","2023-02-27 02:36:12","2023-02-21 04:57:06","2023-02-27 02:36:13 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","4 - Low","Karale, Kranti (ELASTACLOUD)","","","Ian McRobbie"
+"TASK000007780387","DGCM: DPE: Proactive Failed Job Notification","Closed","OPS - Data Protection - ITSVC0010606","2023-02-22 04:03:47","2023-02-28 02:28:55","2023-02-22 04:13:56","2023-02-28 02:28:55 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","4 - Low","Patnala, Gnana Mani (ELASTACLOUD)","","","Ian McRobbie"
+"PTASK000000056682","Ops were not monitoring the WS00-HO (Jana Databricks) cloudwatch alerts","Closed Complete","OPS - Data Protection - ITSVC0010606","2023-02-24 13:45:37","2023-02-28 10:30:35","2023-02-28 10:30:35","","","Prabhu, Megha (ELASTACLOUD)","","",""
+"TASK000007786568","DGCM: DPE: Proactive Failed Job Notification","Closed","OPS - Data Protection - ITSVC0010606","2023-02-23 06:13:40","2023-03-01 02:32:00","2023-02-23 06:35:37","2023-03-01 02:32:00 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+2023-02-23 06:14:51 - Kranti Karale (Additional comments)
+error message- 
+
+UNEXPECTED FAILURE WHILE WAITING FOR THE CLUSTER SOME((0223-030708-2Y261MC4) )TO BE READYSOME(: CLUSTER 0223-030708-2Y261MC4 IS IN UNEXPECTED STATE TERMINATED: SPARK_IMAGE_DOWNLOAD_FAILURE(SERVICE_FAULT)INSTANCE_ID:I-06121D80A67CB5FCA,DATABRICKS_ERROR_MESSAGE:FAILED TO SET UP SPARK CONTAINER DUE TO AN IMAGE DOWNLOAD FAILURE: EXCEPTION WHEN DOWNLOADING SPARK IMAGE: 
+STDOUT: 
+STDERR: 2023/02/23 03:09:05 INFO WORKER_COMMON.PY:468: ACQUIRING LOCK FILE: /VAR/LIB/LXC/BASE-IMAGES/RELEASE__9.1.X-SNAPSHOT-SCALA2.12__DATABRICKS-UNIVERSE__HEAD__20DD9C6__8A90CF3__JENKINS__9F606DC__FORMAT-2.LOCK
+JAVA.UTIL.CONCURRENT.TIMEOUTEXCEPTION: TIMED OUT WITH EXCEPTION AFTER 23899 ATTEMPTS
+.).
+
+","4 - Low","Karale, Kranti (ELASTACLOUD)","","","Ian McRobbie"
+"TASK000007780344","DGCM: DPE: Proactive Failed Job Notification","Closed","OPS - Data Protection - ITSVC0010606","2023-02-22 03:39:52","2023-03-05 02:14:15","2023-02-27 13:14:14","2023-03-05 02:14:15 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+2023-02-27 07:18:48 - Gnana Mani Patnala (Additional comments)
+Hi @Thakkar, Nikhil (TATA CONSULTANCY SERVICES (TCS))
+we have made the changes from our side.
+Can you please advise the Datahub team to send the files?
+
+2023-02-24 15:44:06 - Vijay Kalidas (Additional comments)
+Hi @Thakkar, Nikhil (TATA CONSULTANCY SERVICES (TCS)), we have made the changes from our side. 
+Can you please advise the Datahub team to send the files?
+
+2023-02-22 11:09:35 - Kranti Karale (Additional comments)
+From: kranti.karale@bp.com
+
+To: dataprotectionengine@bp.com,nikhil.thakkar1@bp.com,ServiceNow@bp.com,Jacquie.Stevenson@bp.com,GIEDAPDGCMProductOperationsSupport@bp.com,GDGCMTeamKrypton@bp.com
+
+Subject: TASK000007780344 - DPE Automatic Failed Job Notification
+
+To preview the full email follow the link:
+https://bp.service-now.com/preview_email_body.do?sysparm_email_sys_id=e22cf1e3874969d0c3bea8a40cbb3554&amp;sysparm_direct=true
+
+2023-02-22 10:59:55 - Kranti Karale (Additional comments)
+feature team will see if increasing the instance help to resolve this issue by try running test in DR env.
+
+2023-02-22 04:42:02 - Kranti Karale (Additional comments)
+we tried re-running for prod but its not working. we'll check with feature team.
+
+","4 - Low","Karale, Kranti (ELASTACLOUD)","","","Thakkar, Nikhil (TATA CONSULTANCY SERVICES (TCS))"
+"PTASK000000057232","MS-Teams alerts/notification not set for HO account.","Closed Complete","OPS - Data Protection - ITSVC0010606","2023-03-01 10:50:11","2023-03-05 16:29:10","2023-03-05 16:29:10","","","Prabhu, Megha (ELASTACLOUD)","","",""
+"CHG000000251477","<PROD><DPE> Production Release - Q 1 Sprint - 5 - RFC - 8 - DPE standard changes - 23.03.01","Closed","OPS - Data Protection - ITSVC0010606","2023-03-07 16:07:33","2023-03-08 14:53:55","2023-03-08 14:53:56","","","Prabhu, Megha (ELASTACLOUD)","","",""
+"PRB000000010683","DPE Deploy 2023-03-01 failure due to Detok errors - Instance Profiles taking too long to be created leading to detok pipeline timeout","Assigned","OPS - Data Protection - ITSVC0010606","2023-03-10 17:48:28","2023-03-10 19:52:20","","","","Jafar, Untar (ELASTACLOUD)","","",""
+"TASK000007835669","DGCM: DPE: Privileged AWS access request","Closed","OPS - Data Protection - ITSVC0010606","2023-03-06 14:32:27","2023-03-12 03:07:55","2023-03-06 18:19:04","2023-03-12 03:07:55 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","3 - Moderate","Ian McRobbie","","","Ian McRobbie"
+"TASK000007836488","DGCM: DPE: Privileged AWS access request","Closed","OPS - Data Protection - ITSVC0010606","2023-03-06 16:37:23","2023-03-12 03:13:16","2023-03-06 18:21:07","2023-03-12 03:13:16 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","3 - Moderate","Ian McRobbie","","","Ian McRobbie"
+"TASK000007840839","DGCM: DPE: Privileged AWS access request","Closed","OPS - Data Protection - ITSVC0010606","2023-03-07 12:36:13","2023-03-13 03:04:09","2023-03-07 17:22:19","2023-03-13 03:04:10 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","3 - Moderate","Ian McRobbie","","","Prabhu, Megha (ELASTACLOUD)"
+"TASK000007845005","DGCM: DPE: Privileged AWS access request","Closed","OPS - Data Protection - ITSVC0010606","2023-03-08 08:49:28","2023-03-14 02:36:41","2023-03-08 15:25:50","2023-03-14 02:36:41 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","3 - Moderate","Ian McRobbie","","","Kalidas, Vijay (ELASTACLOUD)"
+"TASK000007852216","DGCM: DPE: Privileged AWS access request","Completed","OPS - Data Protection - ITSVC0010606","2023-03-09 14:05:22","2023-03-14 09:12:43","2023-03-14 09:12:43","","3 - Moderate","Ian McRobbie","","","Kalidas, Vijay (ELASTACLOUD)"
+"PTASK000000058272","Detok Databricks instance profile taking longer than expected causing process to fail  ","Open","OPS - Data Protection - ITSVC0010606","2023-03-10 17:48:29","2023-03-14 14:26:41","","","","Jafar, Untar (ELASTACLOUD)","","",""
+"TASK000007850603","DGCM: DPE: Privileged AWS access request","Closed","OPS - Data Protection - ITSVC0010606","2023-03-09 09:45:13","2023-03-15 02:30:50","2023-03-09 14:08:45","2023-03-15 02:30:50 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+","3 - Moderate","Ian McRobbie","","","Neeli, Anjanipriyanka (ELASTACLOUD)"
+"PTASK000000057021","Databricks Infrastucture errors ","Work in Progress","OPS - Data Protection - ITSVC0010606","2023-02-28 13:14:04","2023-03-15 10:41:45","","","","Prabhu, Megha (ELASTACLOUD)","","",""
+"PRB000000010657","Tokenisation jobs are intermittently failing due to infrastructure errors.","Investigation","OPS - Data Protection - ITSVC0010606","2023-02-28 13:14:03","2023-03-15 10:50:22","","","","Prabhu, Megha (ELASTACLOUD)","","",""
+"INC000002966938","Aviaition - Detokenized value not matching with source","Closed","OPS - Data Protection - ITSVC0010606","2023-03-03 14:06:10","2023-03-15 12:00:18","2023-03-15 12:00:18","","3 - Moderate","Kalidas, Vijay (ELASTACLOUD)","","Chaudhary, Hasan (TATA CONSULTANCY SERVICES (TCS))",""
+"PTASK000000056151","AWS Security Development Team making the Policy changes did not communicate change","Closed Complete","OPS - Data Protection - ITSVC0010606","2023-02-21 18:39:39","2023-03-15 15:45:23","2023-03-15 15:45:23","","","Beer, Brian (ELASTACLOUD)","","",""
+"PRB000000010615"," Detok jobs were not able to process - IAM Roles limit has been exceeded","Completed","OPS - Data Protection - ITSVC0010606","2023-02-20 14:28:33","2023-03-15 18:19:52","2023-03-15 18:19:52","","","Prabhu, Megha (ELASTACLOUD)","","",""
+"TASK000007849526","DGCM: DPE: Proactive Failed Job Notification","Closed","OPS - Data Protection - ITSVC0010606","2023-03-09 05:49:22","2023-03-16 02:21:26","2023-03-10 09:11:55","2023-03-16 02:21:26 - System (Additional comments)
+Request automatically closed after 5 days in the Completed state.
+
+2023-03-09 09:54:24 - Anjanipriyanka Neeli (Additional comments)
+The cluster configuration setting that Dev team set a week solved the earlier issue. However, during the deployment yesterday, there were issue and all the changes were rolled back. During this rollback, the cluster configuration setting were also rolled back. And this caused the issue to happen again. Need to increase the cluster size
+
+2023-03-09 09:51:10 - Anjanipriyanka Neeli (Additional comments)
+This issue seems to be similar to the one that we experienced a week before. The cluster size it is using is xs and the file size is file size is 476.4 MB.
+
+","4 - Low","Neeli, Anjanipriyanka (ELASTACLOUD)","","","Thakkar, Nikhil (TATA CONSULTANCY SERVICES (TCS))"
